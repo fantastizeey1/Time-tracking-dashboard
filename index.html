@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <title>Time tracking dashboard</title>
+</head>
+<body>
+  <main>
+    <div class="maincard">
+      <div class="up">
+        <img src="image-jeremy.png" alt="Jeremy">
+        <p>Report for</p>
+        <h2>Jeremy Robson</h2>
+      </div>
+      <div class="down">
+        
+          <button id="daily">Daily</button>
+          <button id="weekly" class="active">Weekly</button>
+          <button id="monthly">Monthly</button>
+        
+      </div>
+    </div>
+    <article class=" weekly work-card" id="weekly-work">
+      <div class="work">
+        <div class="left">
+          <h3>Work</h3>
+          <h2>32hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Week - 36hrs</p>
+        </div>
+      </div>
+    </article>
+    <article class=" weekly Play-card" id="weekly-play">
+      <div class="Play">
+        <div class="left">
+          <h3>Play</h3>
+        <h2>10hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+        <p>Last Week - 8hrs</p>
+        </div>
+      </div>
+    </article>
+    <article class="weekly Study-card" id="weekly-study">
+      <div class="Study">
+        <div class="left">
+          <h3>Study</h3>
+          <h2>4hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Week - 7hrs</p>
+        </div>
+        
+      </div>
+    </article>
+    <article class="weekly Exercise-card" id="weekly-exercise">
+      <div class="Exercise">
+        <div class="left">
+          <h3>Exercise</h3>
+          <h2>4hrs</h2>
+        </div>
+        
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Week - 5hrs</p>
+        </div>
+      </div>
+    </article>
+    <article class="weekly Social-card" id="weekly-social">
+      <div class="Social">
+        <div class="left">
+          <h3>Social</h3>
+          <h2>5hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Week - 10hrs</p>
+        </div>
+        
+      </div>
+    </article>
+    <article class="weekly Self-card" id="weekly-self">
+      <div class="Self">
+        <div class="left">
+          <h3>Self Care</h3>
+          <h2>2hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Week - 2hrs</p>
+        </div>
+        
+      </div>
+    </article>
+
+    <article class="daily work-card" id="daily-work">
+      <div class="work">
+        <div class="left">
+          <h3>Work</h3>
+          <h2>5hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>yesterday - 7hrs</p>
+        </div>
+      </div>
+    </article>
+    <article class="daily Play-card" id="daily-play">
+      <div class="Play">
+        <div class="left">
+          <h3>Play</h3>
+        <h2>1hr</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+        <p>yesterday - 2hrs</p>
+        </div>
+      </div>
+    </article>
+    <article class="daily Study-card" id="daily-study">
+      <div class="Study">
+        <div class="left">
+          <h3>Study</h3>
+          <h2>0hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>yesterday - 1hr</p>
+        </div>
+        
+      </div>
+    </article>
+    <article class="daily Exercise-card" id="daily-exercise">
+      <div class="Exercise">
+        <div class="left">
+          <h3>Exercise</h3>
+          <h2>1hr</h2>
+        </div>
+        
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>yesterday - 1hr</p>
+        </div>
+      </div>
+    </article>
+    <article class="daily Social-card" id="daily-social">
+      <div class="Social">
+        <div class="left">
+          <h3>Social</h3>
+          <h2>1hr</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>yesterday - 3hrs</p>
+        </div>
+        
+      </div>
+    </article>
+    <article class="daily Self-card" id="daily-self">
+      <div class="Self">
+        <div class="left">
+          <h3>Self Care</h3>
+          <h2>0hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>yesterday - 1hr</p>
+        </div>
+        
+      </div>
+    </article>
+
+    <article class="monthly work-card" id="monthly-work">
+      <div class="work">
+        <div class="left">
+          <h3>Work</h3>
+          <h2>103hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Month - 128hrs</p>
+        </div>
+      </div>
+    </article>
+    <article class="monthly Play-card" id="monthly-play">
+      <div class="Play">
+        <div class="left">
+          <h3>Play</h3>
+        <h2>23hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+        <p>Last Month - 29hrs</p>
+        </div>
+      </div>
+    </article>
+    <article class="monthly Study-card" id="monthly-study">
+      <div class="Study">
+        <div class="left">
+          <h3>Study</h3>
+          <h2>13hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Month - 19hrs</p>
+        </div>
+        
+      </div>
+    </article>
+    <article class="monthly Exercise-card" id="monthly-exercise">
+      <div class="Exercise">
+        <div class="left">
+          <h3>Exercise</h3>
+          <h2>11hrs</h2>
+        </div>
+        
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Month - 18hrs</p>
+        </div>
+      </div>
+    </article>
+    <article class="monthly Social-card" id="monthly-social">
+      <div class="Social">
+        <div class="left">
+          <h3>Social</h3>
+          <h2>21hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Month - 23hrs</p>
+        </div>
+        
+      </div>
+    </article>
+    <article class="monthly Self-card" id="monthly-self">
+      <div class="Self">
+        <div class="left">
+          <h3>Self Care</h3>
+          <h2>7hrs</h2>
+        </div>
+        <div class="right">
+          <img src="icon-ellipsis.svg" alt="ellipsis">
+          <p>Last Month - 11hrs</p>
+        </div>
+        
+      </div>
+    </article>
+    
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
